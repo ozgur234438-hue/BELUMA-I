@@ -1272,15 +1272,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 # ── Sohbet ──
                 with gr.Tab("💬 Sohbet", id="sohbet"):
                     resim_on = gr.Image(label="Vision", type="filepath", height=120, visible=False)
+                    with gr.Tab("💬 Sohbet", id="sohbet"):
+                    resim_on = gr.Image(label="Vision", type="filepath", height=120, visible=False)
                     chatbot = gr.Chatbot(
-                        show_label=False,
-                        container=True,
                         height=500,
-                        label="",
-                        elem_id="beluma_chat",
-                        bubble_full_width=False,
-                        show_copy_button=True
+                        elem_id="beluma_chat"
                     )
+                    dr_output = gr.Markdown(visible=False)
                     dr_output = gr.Markdown(visible=False)
                     with gr.Column(elem_id="beluma-inputbar"):
                         with gr.Row(equal_height=True, elem_classes=["beluma-bar"]):
