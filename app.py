@@ -1275,7 +1275,7 @@ chatbot = gr.Chatbot(
             type="messages",
             bubble_full_width=False,
             show_copy_button=True
-            )
+                    )
                     dr_output = gr.Markdown(visible=False)
                     with gr.Column(elem_id="beluma-inputbar"):
                         with gr.Row(equal_height=True, elem_classes=["beluma-bar"]):
