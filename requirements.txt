@@ -1,0 +1,12 @@
+gradio==4.44.0
+groq
+gtts
+requests
+duckduckgo-search
+pypdf
+python-docx
+openpyxl
+Pillow
+huggingface_hub
+gradio_client
+pydub
