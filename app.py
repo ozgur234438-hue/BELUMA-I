@@ -1278,7 +1278,6 @@ document.addEventListener("DOMContentLoaded", function() {
                         height=500,
                         label="",
                         elem_id="beluma_chat",
-                        type="messages",
                         bubble_full_width=False,
                         show_copy_button=True
                     )
