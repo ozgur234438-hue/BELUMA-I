@@ -1276,7 +1276,6 @@ document.addEventListener("DOMContentLoaded", function() {
                         show_label=False,
                         container=True,
                         height=500,
-                        value=[{"role": "assistant", "content": "👋 Merhaba! Ben **BELUMA-I**. Sana nasıl yardımcı olabilirim?\n\n💡 Hava, borsa, haberler, kod yazma, analiz veya sohbet — her şey için burdayım!"}],
                         label="",
                         elem_id="beluma_chat",
                         type="messages",
