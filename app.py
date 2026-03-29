@@ -1857,10 +1857,11 @@ document.addEventListener("DOMContentLoaded", function() {
 # Çoklu kullanıcı destekli auth
 _auth_fn = gradio_auth_genisletilmis if (_load_auth() or users_yukle()["kullanicilar"]) else None
 
+# HuggingFace Spaces: auth varsa etkinleştir, yoksa direkt başlat
+# Çoklu kullanıcı destekli auth
+_auth_fn = gradio_auth_genisletilmis if (_load_auth() or users_yukle()["kullanicilar"]) else None
+
 demo.launch(
     auth=_auth_fn,
-    auth_message="🔐 BELUMA-I'ya Hoş Geldiniz.",
-    server_name="0.0.0.0",
-    server_port=7860,
-    share=False,
+    auth_message="🔐 BELUMA-I'ya Hoş Geldiniz."
 )
