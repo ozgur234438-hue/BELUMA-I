@@ -1269,9 +1269,6 @@ document.addEventListener("DOMContentLoaded", function() {
             bms = gr.State(io.get("document_text",""))
 
             with gr.Tabs() as ana_tabs:
-                # ── Sohbet ──
-                with gr.Tabs() as ana_tabs:
-                # ── Sohbet ──
                 with gr.Tab("💬 Sohbet", id="sohbet"):
                     resim_on = gr.Image(label="Vision", type="filepath", height=120, visible=False)
                     chatbot = gr.Chatbot(
