@@ -1,5 +1,4 @@
-streamlit
-gradio
+gradio>=5.0.0
 groq
 gtts
 requests
