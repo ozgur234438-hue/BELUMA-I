@@ -1561,7 +1561,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     )
 
                 with gr.Tab("🧩 Plugin", id="plugin"):
-                    pl_liste  = gr.Markdown(value=plugin_listesi_metin() if hasattr(lambda:0, '__name__') else "", label="Yüklü Pluginler")
+                    pl_liste = gr.Markdown(value="Henüz plugin yok.", label="Yüklü Pluginler")
                     with gr.Row():
                         pl_yenile = gr.Button("🔄 Yeniden Yükle", variant="primary")
                         pl_durum  = gr.Markdown("")
