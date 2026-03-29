@@ -3616,7 +3616,7 @@ footer{display:none!important}
                     chatbot  = gr.Chatbot(
                         value=[{"role":"assistant","content":"👋 Merhaba! Ben **BELUMA-I**. Sana nasıl yardımcı olabilirim?\n\n💡 Hava, borsa, haberler, kod yazma, analiz veya sohbet — her şey için burdayım!"}],
                         label="", height=480, elem_id="beluma_chat",
-                        type="messages", bubble_full_width=False, show_copy_button=True,
+                        type="messages", show_copy_button=True,
                         show_label=False,
                     )
                     dr_output = gr.Markdown(visible=False)
