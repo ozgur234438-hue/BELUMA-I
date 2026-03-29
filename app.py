@@ -3615,9 +3615,8 @@ footer{display:none!important}
                     resim_on = gr.Image(label="Vision", type="filepath", height=120, visible=False)
                     chatbot  = gr.Chatbot(
                         value=[{"role":"assistant","content":"👋 Merhaba! Ben **BELUMA-I**. Sana nasıl yardımcı olabilirim?\n\n💡 Hava, borsa, haberler, kod yazma, analiz veya sohbet — her şey için burdayım!"}],
-                        label="", height=480, elem_id="beluma_chat",
+                        height=480, elem_id="beluma_chat",
                         type="messages", show_copy_button=True,
-                        show_label=False,
                     )
                     dr_output = gr.Markdown(visible=False)
                     with gr.Column(elem_id="beluma-inputbar"):
