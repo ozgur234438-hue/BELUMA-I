@@ -1261,20 +1261,20 @@ document.addEventListener("DOMContentLoaded", function() {
             bas = gr.State(io.get("document_name",""))
             bms = gr.State(io.get("document_text",""))
 
-            with gr.Tabs() as ana_tabs:
+         with gr.Tabs() as ana_tabs:
                 # ── Sohbet ──
                 with gr.Tab("💬 Sohbet", id="sohbet"):
                     resim_on = gr.Image(label="Vision", type="filepath", height=120, visible=False)
-chatbot = gr.Chatbot(
-            show_label=False,
-            container=True,
-            height=500,
-            value=[{"role": "assistant", "content": "👋 Merhaba! Ben **BELUMA-I**. Sana nasıl yardımcı olabilirim?\n\n💡 Hava, borsa, haberler, kod yazma, analiz veya sohbet — her şey için burdayım!"}],
-            label="",
-            elem_id="beluma_chat",
-            type="messages",
-            bubble_full_width=False,
-            show_copy_button=True
+                    chatbot = gr.Chatbot(
+                        show_label=False,
+                        container=True,
+                        height=500,
+                        value=[{"role": "assistant", "content": "👋 Merhaba! Ben **BELUMA-I**. Sana nasıl yardımcı olabilirim?\n\n💡 Hava, borsa, haberler, kod yazma, analiz veya sohbet — her şey için burdayım!"}],
+                        label="",
+                        elem_id="beluma_chat",
+                        type="messages",
+                        bubble_full_width=False,
+                        show_copy_button=True
                     )
                     dr_output = gr.Markdown(visible=False)
                     with gr.Column(elem_id="beluma-inputbar"):
